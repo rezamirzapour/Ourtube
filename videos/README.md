@@ -1,2 +1,26 @@
-## Hello
-the videos folder is empty right now.
+# DOWNLOADED VIDEOS LIST :
+
+----
+
+- 1 - 🎬 [Days-and-Months-in-German-(A1)-｜-Episode-3-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/Days-and-Months-in-German-%28A1%29-%EF%BD%9C-Episode-3-%EF%BD%9C-Easy-Deutsch)
+- 2 - 🎬 [How-do-you-ask-for-directions-and-locations？-｜-Episode-6-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-do-you-ask-for-directions-and-locations%EF%BC%9F-%EF%BD%9C-Episode-6-%EF%BD%9C-Easy-Deutsch)
+- 3 - 🎬 [How-do-you-shop-in-a-Supermarket-in-German-｜-Episode-11-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-do-you-shop-in-a-Supermarket-in-German-%EF%BD%9C-Episode-11-%EF%BD%9C-Easy-Deutsch)
+- 4 - 🎬 [How-to-Describe-Your-Family-in-German-(A1)-｜-Episode-18-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Describe-Your-Family-in-German-%28A1%29-%EF%BD%9C-Episode-18-%EF%BD%9C-Easy-German)
+- 5 - 🎬 [How-to-Describe-Your-Feelings-in-German-(A1)-｜-Episode-21-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Describe-Your-Feelings-in-German-%28A1%29-%EF%BD%9C-Episode-21-%EF%BD%9C-Easy-German)
+- 6 - 🎬 [How-to-Introduce-Your-Family-&-Friends-in-German-｜-Episode-7-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Introduce-Your-Family-%26-Friends-in-German-%EF%BD%9C-Episode-7-%EF%BD%9C-Easy-Deutsch)
+- 7 - 🎬 [How-to-Introduce-Yourself-in-German-(A1)-｜-Episode-17-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Introduce-Yourself-in-German-%28A1%29-%EF%BD%9C-Episode-17-%EF%BD%9C-Easy-German)
+- 8 - 🎬 [How-to-Introduce-Yourself-in-German-(A1)-｜-Podcast-for-Beginners-｜-Episode-1](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Introduce-Yourself-in-German-%28A1%29-%EF%BD%9C-Podcast-for-Beginners-%EF%BD%9C-Episode-1)
+- 9 - 🎬 [How-to-Order-at-a-German-Café-｜-Episode-15-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Order-at-a-German-Caf%C3%A9-%EF%BD%9C-Episode-15-%EF%BD%9C-Easy-German)
+- 10 - 🎬 [How-to-Say-Hello-in-German-｜-Episode-5-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Say-Hello-in-German-%EF%BD%9C-Episode-5-%EF%BD%9C-Easy-Deutsch)
+- 11 - 🎬 [How-to-Talk-About-Days-and-Months-in-German-(A1)-｜-Episode-19-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-Days-and-Months-in-German-%28A1%29-%EF%BD%9C-Episode-19-%EF%BD%9C-Easy-German)
+- 12 - 🎬 [How-to-Talk-About-Shopping-and-Clothes-in-German-｜-Episode-10-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-Shopping-and-Clothes-in-German-%EF%BD%9C-Episode-10-%EF%BD%9C-Easy-Deutsch)
+- 13 - 🎬 [How-to-Talk-About-Your-Daily-Routine-(A1)-｜-Learn-German-with-Podcast-｜-Episode-2-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-Your-Daily-Routine-%28A1%29-%EF%BD%9C-Learn-German-with-Podcast-%EF%BD%9C-Episode-2-%EF%BD%9C-Easy-German)
+- 14 - 🎬 [How-to-Talk-About-Your-Daily-Routine-in-German-(A1)-｜-Episode-16-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-Your-Daily-Routine-in-German-%28A1%29-%EF%BD%9C-Episode-16-%EF%BD%9C-Easy-German)
+- 15 - 🎬 [How-to-Talk-About-Your-Favorite-Hobbies-in-German-｜-Episode-8-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-Your-Favorite-Hobbies-in-German-%EF%BD%9C-Episode-8-%EF%BD%9C-Easy-Deutsch)
+- 16 - 🎬 [How-to-Talk-About-the-Weather-in-German-｜-Episode-4-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-Talk-About-the-Weather-in-German-%EF%BD%9C-Episode-4-%EF%BD%9C-Easy-Deutsch)
+- 17 - 🎬 [How-to-order-food-in-German-｜-Episode-14-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/How-to-order-food-in-German-%EF%BD%9C-Episode-14-%EF%BD%9C-Easy-German)
+- 18 - 🎬 [Talk-About-Your-Day-in-German-(A1)-｜-Episode-22-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/Talk-About-Your-Day-in-German-%28A1%29-%EF%BD%9C-Episode-22-%EF%BD%9C-Easy-German)
+- 19 - 🎬 [Talking-About-Colors-and-Clothes-in-German-｜-Episode-12-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/Talking-About-Colors-and-Clothes-in-German-%EF%BD%9C-Episode-12-%EF%BD%9C-Easy-German)
+- 20 - 🎬 [Talking-About-Numbers-and-Dates-in-German-｜-Episode-13-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/Talking-About-Numbers-and-Dates-in-German-%EF%BD%9C-Episode-13-%EF%BD%9C-Easy-German)
+- 21 - 🎬 [Talking-about-food-and-drink-in-German-｜-Episode-9-｜-Easy-Deutsch](https://github.com/rezamirzapour/Ourtube/tree/main/videos/Talking-about-food-and-drink-in-German-%EF%BD%9C-Episode-9-%EF%BD%9C-Easy-Deutsch)
+- 22 - 🎬 [The-four-Seasons-in-German-(A1)-｜-Episode-20-｜-Easy-German](https://github.com/rezamirzapour/Ourtube/tree/main/videos/The-four-Seasons-in-German-%28A1%29-%EF%BD%9C-Episode-20-%EF%BD%9C-Easy-German)
