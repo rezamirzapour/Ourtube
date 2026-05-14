@@ -1,0 +1,54 @@
+name: 04 - 📦 مهاجرت ویدیوهای قدیمی به فولدر تاریخ دار
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_migrate:
+        description: '⚠️ با زدن این دکمه ویدیوهای قدیمی به فولدر تاریخ دار منتقل می‌شوند'
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  migrate:
+    name: "📦 مهاجرت ویدیوها"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.confirm_migrate == 'true' }}
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Run migration script
+        run: |
+          chmod +x migrate.sh
+          ./migrate.sh
+
+      - name: Show result
+        run: |
+          echo ""
+          echo "========================================"
+          echo "Final videos structure:"
+          echo "========================================"
+          ls -la videos/
+          echo ""
+          echo "Dated folders:"
+          ls -la videos/ | grep -E "[0-9]{8}_[0-9]{6}" || echo "  (none)"
+          echo "========================================"
+
+  not-confirmed:
+    name: "❌ لغو شد"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.confirm_migrate != 'true' }}
+    steps:
+      - run: echo "❌ عملیات لغو شد"
