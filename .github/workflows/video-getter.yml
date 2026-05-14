@@ -668,6 +668,7 @@ jobs:
           REPO_OWNER=${REPO_OWNER_ENV}
           REPO_NAME=${REPO_NAME_ENV}
           BACKUP_DIR=$(cat /tmp/backup_dir_path.txt)
+          TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 
           BACKUP_FILE_COUNT=$(find "$BACKUP_DIR" -type f 2>/dev/null | wc -l)
           if [ "$BACKUP_FILE_COUNT" -eq 0 ]; then
@@ -720,28 +721,33 @@ jobs:
             MASTER_README="videos/README.md"
             { echo "# DOWNLOADED VIDEOS LIST :"; echo ""; echo "----"; echo ""; } > "$MASTER_README"
             NUM=0
-            for folder in videos/*/; do
-              [ -d "$folder" ] || continue
-              FOLDER_NAME=$(basename "$folder")
-              [ -f "$folder/README.md" ] || continue
-              NUM=$((NUM + 1))
-              FOLDER_ENCODED=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1], safe=''))" "$FOLDER_NAME")
-              FOLDER_LINK="https://github.com/${REPO_OWNER}/${REPO_NAME}/tree/${BRANCH}/videos/${FOLDER_ENCODED}"
-              printf -- "- %s - 🎬 [%s](%s)\n" "$NUM" "$FOLDER_NAME" "$FOLDER_LINK" >> "$MASTER_README"
+            for dated_folder in videos/*/; do
+              [ -d "$dated_folder" ] || continue
+              DATED_NAME=$(basename "$dated_folder")
+              for video_folder in "$dated_folder"*/; do
+                [ -d "$video_folder" ] || continue
+                FOLDER_NAME=$(basename "$video_folder")
+                [ -f "$video_folder/README.md" ] || continue
+                NUM=$((NUM + 1))
+                DATED_ENCODED=$(urlencode "$DATED_NAME")
+                FOLDER_ENCODED=$(urlencode "$FOLDER_NAME")
+                FOLDER_LINK="https://github.com/${REPO_OWNER}/${REPO_NAME}/tree/${BRANCH}/videos/${DATED_ENCODED}/${FOLDER_ENCODED}"
+                printf -- "- %s - 🎬 [%s](%s)\n" "$NUM" "$FOLDER_NAME" "$FOLDER_LINK" >> "$MASTER_README"
+              done
             done
           }
 
           git fetch origin "$BRANCH"
           git reset --hard origin/"$BRANCH"
-          mkdir -p videos
-          cp -r "$BACKUP_DIR"/* videos/
+          mkdir -p "videos/${TIMESTAMP}"
+          cp -r "$BACKUP_DIR"/* "videos/${TIMESTAMP}/"
 
           git add -f videos/
           regenerate_master_readme
           git add -f videos/README.md
 
           if ! git diff --cached --quiet; then
-            git commit -m "[AVASAM] YouTube download [skip ci]"
+            git commit -m "[AVASAM] YouTube download - ${TIMESTAMP} [skip ci]"
             PUSH_RETRY=0
             while [ $PUSH_RETRY -lt 10 ]; do
               PUSH_RETRY=$((PUSH_RETRY + 1))
@@ -753,11 +759,12 @@ jobs:
                 sleep 5
                 git fetch origin "$BRANCH"
                 git reset --hard origin/"$BRANCH"
-                cp -r "$BACKUP_DIR"/* videos/
+                mkdir -p "videos/${TIMESTAMP}"
+                cp -r "$BACKUP_DIR"/* "videos/${TIMESTAMP}/"
                 git add -f videos/
                 regenerate_master_readme
                 git add -f videos/README.md
-                git diff --cached --quiet || git commit -m "[AVASAM] YouTube download [skip ci]"
+                git diff --cached --quiet || git commit -m "[AVASAM] YouTube download - ${TIMESTAMP} [skip ci]"
               fi
             done
           fi
